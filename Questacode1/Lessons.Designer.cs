@@ -28,89 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            grpTopics = new GroupBox();
-            lblbOperators = new Label();
-            lblOutIn = new Label();
-            lblVariables = new Label();
-            lblIntroduction = new Label();
-            panel1 = new Panel();
             grpCodeEditor = new GroupBox();
+            textBox1 = new TextBox();
             grpSubTopics = new GroupBox();
-            lblConditions = new Label();
-            lblMethodFunctions = new Label();
-            lblArrays = new Label();
-            label1 = new Label();
-            grpTopics.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            grpCodeEditor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // grpTopics
-            // 
-            grpTopics.Controls.Add(label1);
-            grpTopics.Controls.Add(lblArrays);
-            grpTopics.Controls.Add(lblMethodFunctions);
-            grpTopics.Controls.Add(lblConditions);
-            grpTopics.Controls.Add(lblbOperators);
-            grpTopics.Controls.Add(lblOutIn);
-            grpTopics.Controls.Add(lblVariables);
-            grpTopics.Controls.Add(lblIntroduction);
-            grpTopics.Location = new Point(12, 39);
-            grpTopics.Name = "grpTopics";
-            grpTopics.Size = new Size(254, 698);
-            grpTopics.TabIndex = 0;
-            grpTopics.TabStop = false;
-            grpTopics.Text = "Topics";
-            // 
-            // lblbOperators
-            // 
-            lblbOperators.AutoSize = true;
-            lblbOperators.Location = new Point(15, 288);
-            lblbOperators.Name = "lblbOperators";
-            lblbOperators.Size = new Size(75, 20);
-            lblbOperators.TabIndex = 3;
-            lblbOperators.Text = "Operators";
-            // 
-            // lblOutIn
-            // 
-            lblOutIn.AutoSize = true;
-            lblOutIn.Location = new Point(15, 215);
-            lblOutIn.Name = "lblOutIn";
-            lblOutIn.Size = new Size(133, 20);
-            lblOutIn.TabIndex = 2;
-            lblOutIn.Text = "Basic Input/Output";
-            // 
-            // lblVariables
-            // 
-            lblVariables.AutoSize = true;
-            lblVariables.Location = new Point(15, 140);
-            lblVariables.Name = "lblVariables";
-            lblVariables.Size = new Size(69, 20);
-            lblVariables.TabIndex = 1;
-            lblVariables.Text = "Variables";
-            // 
-            // lblIntroduction
-            // 
-            lblIntroduction.AutoSize = true;
-            lblIntroduction.Location = new Point(15, 60);
-            lblIntroduction.Name = "lblIntroduction";
-            lblIntroduction.Size = new Size(90, 20);
-            lblIntroduction.TabIndex = 0;
-            lblIntroduction.Text = "Introduction";
-            // 
-            // panel1
-            // 
-            panel1.Location = new Point(272, 39);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(701, 516);
-            panel1.TabIndex = 1;
             // 
             // grpCodeEditor
             // 
-            grpCodeEditor.Location = new Point(272, 558);
+            grpCodeEditor.Controls.Add(textBox1);
+            grpCodeEditor.Location = new Point(59, 562);
             grpCodeEditor.Name = "grpCodeEditor";
-            grpCodeEditor.Size = new Size(701, 179);
+            grpCodeEditor.Size = new Size(912, 179);
             grpCodeEditor.TabIndex = 2;
             grpCodeEditor.TabStop = false;
             grpCodeEditor.Text = "Code Editor";
+            grpCodeEditor.Enter += grpCodeEditor_Enter;
+            // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(3, 23);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(906, 153);
+            textBox1.TabIndex = 0;
             // 
             // grpSubTopics
             // 
@@ -121,71 +65,36 @@
             grpSubTopics.TabStop = false;
             grpSubTopics.Text = "Sub Topics";
             // 
-            // lblConditions
+            // pictureBox1
             // 
-            lblConditions.AutoSize = true;
-            lblConditions.Location = new Point(15, 361);
-            lblConditions.Name = "lblConditions";
-            lblConditions.Size = new Size(80, 20);
-            lblConditions.TabIndex = 4;
-            lblConditions.Text = "Conditions";
-            // 
-            // lblMethodFunctions
-            // 
-            lblMethodFunctions.AutoSize = true;
-            lblMethodFunctions.Location = new Point(13, 446);
-            lblMethodFunctions.Name = "lblMethodFunctions";
-            lblMethodFunctions.Size = new Size(177, 20);
-            lblMethodFunctions.TabIndex = 5;
-            lblMethodFunctions.Text = "Functions and Procedures";
-            // 
-            // lblArrays
-            // 
-            lblArrays.AutoSize = true;
-            lblArrays.Location = new Point(15, 509);
-            lblArrays.Name = "lblArrays";
-            lblArrays.Size = new Size(111, 20);
-            lblArrays.TabIndex = 6;
-            lblArrays.Text = "Arrays and Lists";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(15, 578);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 20);
-            label1.TabIndex = 7;
-            label1.Text = "Introduction";
+            pictureBox1.Location = new Point(59, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(909, 544);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
             // 
             // Lessons
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 753);
+            Controls.Add(pictureBox1);
             Controls.Add(grpSubTopics);
             Controls.Add(grpCodeEditor);
-            Controls.Add(panel1);
-            Controls.Add(grpTopics);
+            Location = new Point(500, 200);
             Name = "Lessons";
+            StartPosition = FormStartPosition.Manual;
             Text = "Lessons";
-            grpTopics.ResumeLayout(false);
-            grpTopics.PerformLayout();
+            grpCodeEditor.ResumeLayout(false);
+            grpCodeEditor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private GroupBox grpTopics;
-        private Label lblVariables;
-        private Label lblIntroduction;
-        private Panel panel1;
         private GroupBox grpCodeEditor;
         private GroupBox grpSubTopics;
-        private Label lblbOperators;
-        private Label lblOutIn;
-        private Label lblMethodFunctions;
-        private Label lblConditions;
-        private Label label1;
-        private Label lblArrays;
+        private TextBox textBox1;
+        private PictureBox pictureBox1;
     }
 }

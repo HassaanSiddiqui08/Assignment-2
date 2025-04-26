@@ -16,5 +16,10 @@ namespace Questacode1
         {
             InitializeComponent();
         }
+
+        private void grpCodeEditor_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
