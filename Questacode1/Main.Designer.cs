@@ -33,6 +33,7 @@
             qUIZZESToolStripMenuItem = new ToolStripMenuItem();
             gAMEToolStripMenuItem = new ToolStripMenuItem();
             pROGRESSToolStripMenuItem = new ToolStripMenuItem();
+            lessonsOveToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             // 
             // lessonsToolStripMenuItem
             // 
+            lessonsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { lessonsOveToolStripMenuItem });
             lessonsToolStripMenuItem.Name = "lessonsToolStripMenuItem";
             lessonsToolStripMenuItem.Size = new Size(84, 24);
             lessonsToolStripMenuItem.Text = "LESSONS";
@@ -69,6 +71,13 @@
             pROGRESSToolStripMenuItem.Name = "pROGRESSToolStripMenuItem";
             pROGRESSToolStripMenuItem.Size = new Size(94, 24);
             pROGRESSToolStripMenuItem.Text = "PROGRESS";
+            // 
+            // lessonsOveToolStripMenuItem
+            // 
+            lessonsOveToolStripMenuItem.Name = "lessonsOveToolStripMenuItem";
+            lessonsOveToolStripMenuItem.Size = new Size(224, 26);
+            lessonsOveToolStripMenuItem.Text = "Lessons Overview";
+            lessonsOveToolStripMenuItem.Click += lessonsOveToolStripMenuItem_Click;
             // 
             // Main
             // 
@@ -93,5 +102,6 @@
         private ToolStripMenuItem qUIZZESToolStripMenuItem;
         private ToolStripMenuItem gAMEToolStripMenuItem;
         private ToolStripMenuItem pROGRESSToolStripMenuItem;
+        private ToolStripMenuItem lessonsOveToolStripMenuItem;
     }
 }
