@@ -8,34 +8,6 @@ namespace Questacode1
             this.IsMdiContainer = true;
         }
 
-        private void lessonsOveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // int x  = 0;
-
-
-            //menuStrip2.Visible = true;
-        }
-
-        private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void introToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lessonsOveToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            panel2.Visible = true;
-        }
-
         private void introToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Lessons lessons = new Lessons();
@@ -50,12 +22,17 @@ namespace Questacode1
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result ;
+            DialogResult result;
             result = MessageBox.Show("Are you sure you want to exit", "Confirm exit", MessageBoxButtons.YesNo);
             if (result != DialogResult.Yes)
             {
                 e.Cancel = true;
             }
+        }
+
+        private void lessonsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelLessons.Visible = true;
         }
     }
 }

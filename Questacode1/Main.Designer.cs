@@ -31,12 +31,11 @@
             panel1 = new Panel();
             menuStrip1 = new MenuStrip();
             lessonsToolStripMenuItem = new ToolStripMenuItem();
-            lessonsOveToolStripMenuItem = new ToolStripMenuItem();
             qUIZZESToolStripMenuItem = new ToolStripMenuItem();
             gAMEToolStripMenuItem = new ToolStripMenuItem();
             pROGRESSToolStripMenuItem = new ToolStripMenuItem();
             eXITToolStripMenuItem = new ToolStripMenuItem();
-            panel2 = new Panel();
+            panelLessons = new Panel();
             menuStrip2 = new MenuStrip();
             introToolStripMenuItem = new ToolStripMenuItem();
             variablesToolStripMenuItem = new ToolStripMenuItem();
@@ -45,7 +44,7 @@
             operatorsToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
-            panel2.SuspendLayout();
+            panelLessons.SuspendLayout();
             menuStrip2.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,23 +64,16 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { lessonsToolStripMenuItem, qUIZZESToolStripMenuItem, gAMEToolStripMenuItem, pROGRESSToolStripMenuItem, eXITToolStripMenuItem });
             menuStrip1.Location = new Point(249, 30);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(384, 28);
+            menuStrip1.Size = new Size(534, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // lessonsToolStripMenuItem
             // 
-            lessonsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { lessonsOveToolStripMenuItem });
             lessonsToolStripMenuItem.Name = "lessonsToolStripMenuItem";
             lessonsToolStripMenuItem.Size = new Size(84, 24);
             lessonsToolStripMenuItem.Text = "LESSONS";
-            // 
-            // lessonsOveToolStripMenuItem
-            // 
-            lessonsOveToolStripMenuItem.Name = "lessonsOveToolStripMenuItem";
-            lessonsOveToolStripMenuItem.Size = new Size(207, 26);
-            lessonsOveToolStripMenuItem.Text = "Lessons Overview";
-            lessonsOveToolStripMenuItem.Click += lessonsOveToolStripMenuItem_Click_1;
+            lessonsToolStripMenuItem.Click += lessonsToolStripMenuItem_Click;
             // 
             // qUIZZESToolStripMenuItem
             // 
@@ -108,20 +100,20 @@
             eXITToolStripMenuItem.Text = "EXIT";
             eXITToolStripMenuItem.Click += eXITToolStripMenuItem_Click_1;
             // 
-            // panel2
+            // panelLessons
             // 
-            panel2.Controls.Add(menuStrip2);
-            panel2.Location = new Point(12, 105);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(273, 623);
-            panel2.TabIndex = 4;
-            panel2.Visible = false;
+            panelLessons.Controls.Add(menuStrip2);
+            panelLessons.Location = new Point(12, 105);
+            panelLessons.Name = "panelLessons";
+            panelLessons.Size = new Size(273, 623);
+            panelLessons.TabIndex = 4;
             // 
             // menuStrip2
             // 
             menuStrip2.Dock = DockStyle.Left;
             menuStrip2.ImageScalingSize = new Size(20, 20);
             menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem });
+            menuStrip2.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip2.Location = new Point(0, 0);
             menuStrip2.Name = "menuStrip2";
             menuStrip2.Size = new Size(110, 623);
@@ -131,7 +123,7 @@
             // introToolStripMenuItem
             // 
             introToolStripMenuItem.Name = "introToolStripMenuItem";
-            introToolStripMenuItem.Size = new Size(97, 24);
+            introToolStripMenuItem.Size = new Size(104, 24);
             introToolStripMenuItem.Text = "Introduction";
             introToolStripMenuItem.Click += introToolStripMenuItem_Click_1;
             // 
@@ -139,7 +131,7 @@
             // 
             variablesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { variablesToolStripMenuItem1, basicInputOutputToolStripMenuItem, operatorsToolStripMenuItem });
             variablesToolStripMenuItem.Name = "variablesToolStripMenuItem";
-            variablesToolStripMenuItem.Size = new Size(97, 24);
+            variablesToolStripMenuItem.Size = new Size(65, 24);
             variablesToolStripMenuItem.Text = "Topics";
             // 
             // variablesToolStripMenuItem1
@@ -165,7 +157,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1334, 757);
-            Controls.Add(panel2);
+            Controls.Add(panelLessons);
             Controls.Add(panel1);
             Name = "Main";
             Text = "Main";
@@ -175,8 +167,8 @@
             panel1.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panelLessons.ResumeLayout(false);
+            panelLessons.PerformLayout();
             menuStrip2.ResumeLayout(false);
             menuStrip2.PerformLayout();
             ResumeLayout(false);
@@ -184,7 +176,7 @@
 
         #endregion
         private Panel panel1;
-        private Panel panel2;
+        private Panel panelLessons;
         private MenuStrip menuStrip2;
         private ToolStripMenuItem introToolStripMenuItem;
         private ToolStripMenuItem variablesToolStripMenuItem;
@@ -193,7 +185,6 @@
         private ToolStripMenuItem operatorsToolStripMenuItem;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem lessonsToolStripMenuItem;
-        private ToolStripMenuItem lessonsOveToolStripMenuItem;
         private ToolStripMenuItem qUIZZESToolStripMenuItem;
         private ToolStripMenuItem gAMEToolStripMenuItem;
         private ToolStripMenuItem pROGRESSToolStripMenuItem;
