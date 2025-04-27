@@ -1,6 +1,6 @@
 ﻿namespace Questacode1
 {
-    partial class Lessons
+    partial class Introduction
     {
         /// <summary>
         /// Required designer variable.
@@ -73,7 +73,7 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // Lessons
+            // Introduction
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,9 +82,9 @@
             Controls.Add(grpSubTopics);
             Controls.Add(grpCodeEditor);
             Location = new Point(500, 200);
-            Name = "Lessons";
+            Name = "Introduction";
             StartPosition = FormStartPosition.Manual;
-            Text = "Lessons";
+            Text = "Introduction";
             grpCodeEditor.ResumeLayout(false);
             grpCodeEditor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

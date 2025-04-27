@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Questacode1
 {
-    public partial class Lessons : Form
+    public partial class Introduction : Form
     {
-        public Lessons()
+        public Introduction()
         {
             InitializeComponent();
         }

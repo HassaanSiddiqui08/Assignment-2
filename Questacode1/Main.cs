@@ -10,7 +10,7 @@ namespace Questacode1
 
         private void introToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Lessons lessons = new Lessons();
+            Introduction lessons = new Introduction();
             lessons.Show();
         }
 
@@ -32,7 +32,44 @@ namespace Questacode1
 
         private void lessonsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panelLessons.Location = new Point(10, 100);
             panelLessons.Visible = true;
+
+            panelProgress.Visible = false;
+            panelQuizzes.Visible = false;
+            panelGames.Visible = false;
+
+        }
+        private void qUIZZESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelQuizzes.Location = new Point(10, 100);
+            panelQuizzes.Visible = true;
+
+            panelProgress.Visible = false;
+            panelLessons.Visible = false;
+            panelGames.Visible = false;
+        }
+
+        private void gAMEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelGames.Location = new Point(10, 100);
+            panelGames.Visible = true;
+
+            panelProgress.Visible = false;
+            panelLessons.Visible = false;
+            panelQuizzes.Visible = false;
+
+        }
+
+        private void pROGRESSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelProgress.Location = new Point(10, 100);
+            panelProgress.Visible = true;
+
+            panelGames.Visible = false;
+            panelLessons.Visible = false;
+            panelQuizzes.Visible = false;
+
         }
     }
 }
