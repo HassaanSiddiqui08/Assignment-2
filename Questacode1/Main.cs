@@ -1,3 +1,5 @@
+using Questacode1.Lessons;
+
 namespace Questacode1
 {
     public partial class Main : Form
@@ -10,8 +12,10 @@ namespace Questacode1
 
         private void introToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Introduction lessons = new Introduction();
-            lessons.Show();
+            Introduction introduction = new Introduction();
+            introduction.Left = panelLessons.Left + panelLessons.Width + 10;
+            introduction.Top = panelLessons.Top + 35;
+            introduction.Show();
         }
 
         private void eXITToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -71,5 +75,78 @@ namespace Questacode1
             panelQuizzes.Visible = false;
 
         }
+
+        private void basicInputOutputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Basic basic = new Basic();
+            basic.Left = panelLessons.Left + panelLessons.Width + 10;
+            basic.Left = panelLessons.Left + panelLessons.Width + 10;
+            basic.Top = panelLessons.Top + 35;
+            basic.Show();
+        }
+
+        private void operatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Operators operators = new Operators();
+            operators.Left = panelLessons.Left + panelLessons.Width + 10;
+            operators.Left = panelLessons.Left + panelLessons.Width + 10;
+            operators.Top = panelLessons.Top + 35;
+            operators.Show();
+        }
+
+        private void conditionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Conditions conditions = new Conditions();
+            conditions.Left = panelLessons.Left + panelLessons.Width + 10;
+            conditions.Left = panelLessons.Left + panelLessons.Width + 10;
+            conditions.Top = panelLessons.Top + 35;
+            conditions.Show();
+        }
+
+        private void loopsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Loops loops = new Loops();
+            loops.Left = panelLessons.Left + panelLessons.Width + 10;
+            loops.Left = panelLessons.Left + panelLessons.Width + 10;
+            loops.Top = panelLessons.Top + 35;
+            loops.Show();
+        }
+
+        private void functionsAndMethodsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MethodsFunctions methods = new MethodsFunctions();
+            methods.Left = panelLessons.Left + panelLessons.Width + 10;
+            methods.Left = panelLessons.Left + panelLessons.Width + 10;
+            methods.Top = panelLessons.Top + 35;
+            methods.Show();
+        }
+
+        private void arraysAndListsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ArrayList array = new ArrayList();
+            array.Left = panelLessons.Left + panelLessons.Width + 10;
+            array.Left = panelLessons.Left + panelLessons.Width + 10;
+            array.Top = panelLessons.Top + 35;
+            array.Show();
+        }
+
+        private void graphicsAndToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GraphicsAnimations graphicsAnimations = new GraphicsAnimations();
+            graphicsAnimations.Left = panelLessons.Left + panelLessons.Width + 10;
+            graphicsAnimations.Left = panelLessons.Left + panelLessons.Width + 10;
+            graphicsAnimations.Top = panelLessons.Top + 35;
+            graphicsAnimations.Show();
+        }
+
+        private void creatingAGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateGame createGame = new CreateGame();
+            createGame.Left = panelLessons.Left + panelLessons.Width + 10;
+            createGame.Left = panelLessons.Left + panelLessons.Width + 10;
+            createGame.Top = panelLessons.Top + 35;
+            createGame.Show();
+        }
     }
+
 }

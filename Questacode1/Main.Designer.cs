@@ -38,6 +38,15 @@
             panelLessons = new Panel();
             menuStrip2 = new MenuStrip();
             introToolStripMenuItem = new ToolStripMenuItem();
+            variablesToolStripMenuItem = new ToolStripMenuItem();
+            basicInputOutputToolStripMenuItem = new ToolStripMenuItem();
+            operatToolStripMenuItem = new ToolStripMenuItem();
+            conditionsToolStripMenuItem = new ToolStripMenuItem();
+            loopsToolStripMenuItem = new ToolStripMenuItem();
+            functionsAndMethodsToolStripMenuItem = new ToolStripMenuItem();
+            arraysAndListsToolStripMenuItem = new ToolStripMenuItem();
+            graphicsAndToolStripMenuItem = new ToolStripMenuItem();
+            creatingAGameToolStripMenuItem = new ToolStripMenuItem();
             panelQuizzes = new Panel();
             menuStrip3 = new MenuStrip();
             toolStripMenuItem1 = new ToolStripMenuItem();
@@ -48,7 +57,6 @@
             panelProgress = new Panel();
             menuStrip5 = new MenuStrip();
             toolStripMenuItem4 = new ToolStripMenuItem();
-            variablesToolStripMenuItem = new ToolStripMenuItem();
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
             panelLessons.SuspendLayout();
@@ -128,11 +136,11 @@
             // 
             menuStrip2.Dock = DockStyle.Left;
             menuStrip2.ImageScalingSize = new Size(20, 20);
-            menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem });
+            menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem, basicInputOutputToolStripMenuItem, operatToolStripMenuItem, conditionsToolStripMenuItem, loopsToolStripMenuItem, functionsAndMethodsToolStripMenuItem, arraysAndListsToolStripMenuItem, graphicsAndToolStripMenuItem, creatingAGameToolStripMenuItem });
             menuStrip2.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip2.Location = new Point(0, 0);
             menuStrip2.Name = "menuStrip2";
-            menuStrip2.Size = new Size(156, 623);
+            menuStrip2.Size = new Size(188, 623);
             menuStrip2.TabIndex = 3;
             menuStrip2.Text = "menuStrip2";
             // 
@@ -142,6 +150,68 @@
             introToolStripMenuItem.Size = new Size(104, 24);
             introToolStripMenuItem.Text = "Introduction";
             introToolStripMenuItem.Click += introToolStripMenuItem_Click_1;
+            // 
+            // variablesToolStripMenuItem
+            // 
+            variablesToolStripMenuItem.Name = "variablesToolStripMenuItem";
+            variablesToolStripMenuItem.Size = new Size(83, 24);
+            variablesToolStripMenuItem.Text = "Variables";
+            // 
+            // basicInputOutputToolStripMenuItem
+            // 
+            basicInputOutputToolStripMenuItem.Name = "basicInputOutputToolStripMenuItem";
+            basicInputOutputToolStripMenuItem.Size = new Size(147, 24);
+            basicInputOutputToolStripMenuItem.Text = "Basic Input/Output";
+            basicInputOutputToolStripMenuItem.Click += basicInputOutputToolStripMenuItem_Click;
+            // 
+            // operatToolStripMenuItem
+            // 
+            operatToolStripMenuItem.Name = "operatToolStripMenuItem";
+            operatToolStripMenuItem.Size = new Size(89, 24);
+            operatToolStripMenuItem.Text = "Operators";
+            operatToolStripMenuItem.Click += operatToolStripMenuItem_Click;
+            // 
+            // conditionsToolStripMenuItem
+            // 
+            conditionsToolStripMenuItem.Name = "conditionsToolStripMenuItem";
+            conditionsToolStripMenuItem.Size = new Size(94, 24);
+            conditionsToolStripMenuItem.Text = "Conditions";
+            conditionsToolStripMenuItem.Click += conditionsToolStripMenuItem_Click;
+            // 
+            // loopsToolStripMenuItem
+            // 
+            loopsToolStripMenuItem.Name = "loopsToolStripMenuItem";
+            loopsToolStripMenuItem.Size = new Size(63, 24);
+            loopsToolStripMenuItem.Text = "Loops";
+            loopsToolStripMenuItem.Click += loopsToolStripMenuItem_Click;
+            // 
+            // functionsAndMethodsToolStripMenuItem
+            // 
+            functionsAndMethodsToolStripMenuItem.Name = "functionsAndMethodsToolStripMenuItem";
+            functionsAndMethodsToolStripMenuItem.Size = new Size(176, 24);
+            functionsAndMethodsToolStripMenuItem.Text = "Functions and Methods";
+            functionsAndMethodsToolStripMenuItem.Click += functionsAndMethodsToolStripMenuItem_Click;
+            // 
+            // arraysAndListsToolStripMenuItem
+            // 
+            arraysAndListsToolStripMenuItem.Name = "arraysAndListsToolStripMenuItem";
+            arraysAndListsToolStripMenuItem.Size = new Size(125, 24);
+            arraysAndListsToolStripMenuItem.Text = "Arrays and Lists";
+            arraysAndListsToolStripMenuItem.Click += arraysAndListsToolStripMenuItem_Click;
+            // 
+            // graphicsAndToolStripMenuItem
+            // 
+            graphicsAndToolStripMenuItem.Name = "graphicsAndToolStripMenuItem";
+            graphicsAndToolStripMenuItem.Size = new Size(182, 24);
+            graphicsAndToolStripMenuItem.Text = "Graphics and Animation";
+            graphicsAndToolStripMenuItem.Click += graphicsAndToolStripMenuItem_Click;
+            // 
+            // creatingAGameToolStripMenuItem
+            // 
+            creatingAGameToolStripMenuItem.Name = "creatingAGameToolStripMenuItem";
+            creatingAGameToolStripMenuItem.Size = new Size(133, 24);
+            creatingAGameToolStripMenuItem.Text = "Creating a game";
+            creatingAGameToolStripMenuItem.Click += creatingAGameToolStripMenuItem_Click;
             // 
             // panelQuizzes
             // 
@@ -230,12 +300,6 @@
             toolStripMenuItem4.Size = new Size(79, 24);
             toolStripMenuItem4.Text = "Progress";
             // 
-            // variablesToolStripMenuItem
-            // 
-            variablesToolStripMenuItem.Name = "variablesToolStripMenuItem";
-            variablesToolStripMenuItem.Size = new Size(83, 24);
-            variablesToolStripMenuItem.Text = "Variables";
-            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -295,5 +359,13 @@
         private MenuStrip menuStrip5;
         private ToolStripMenuItem toolStripMenuItem4;
         private ToolStripMenuItem variablesToolStripMenuItem;
+        private ToolStripMenuItem basicInputOutputToolStripMenuItem;
+        private ToolStripMenuItem operatToolStripMenuItem;
+        private ToolStripMenuItem conditionsToolStripMenuItem;
+        private ToolStripMenuItem loopsToolStripMenuItem;
+        private ToolStripMenuItem functionsAndMethodsToolStripMenuItem;
+        private ToolStripMenuItem arraysAndListsToolStripMenuItem;
+        private ToolStripMenuItem graphicsAndToolStripMenuItem;
+        private ToolStripMenuItem creatingAGameToolStripMenuItem;
     }
 }
