@@ -58,9 +58,9 @@
             // 
             // grpSubTopics
             // 
-            grpSubTopics.Location = new Point(983, 39);
+            grpSubTopics.Location = new Point(983, 12);
             grpSubTopics.Name = "grpSubTopics";
-            grpSubTopics.Size = new Size(190, 514);
+            grpSubTopics.Size = new Size(190, 541);
             grpSubTopics.TabIndex = 3;
             grpSubTopics.TabStop = false;
             grpSubTopics.Text = "Sub Topics";
