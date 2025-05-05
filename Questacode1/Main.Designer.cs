@@ -127,6 +127,7 @@
             // panelLessons
             // 
             panelLessons.Controls.Add(menuStrip2);
+            panelLessons.Font = new Font("Segoe UI", 9F);
             panelLessons.Location = new Point(10, 100);
             panelLessons.Name = "panelLessons";
             panelLessons.Size = new Size(273, 623);
@@ -156,6 +157,7 @@
             variablesToolStripMenuItem.Name = "variablesToolStripMenuItem";
             variablesToolStripMenuItem.Size = new Size(83, 24);
             variablesToolStripMenuItem.Text = "Variables";
+            variablesToolStripMenuItem.Click += variablesToolStripMenuItem_Click;
             // 
             // basicInputOutputToolStripMenuItem
             // 

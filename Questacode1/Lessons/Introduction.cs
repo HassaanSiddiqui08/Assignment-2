@@ -15,6 +15,10 @@ namespace Questacode1
         public Introduction()
         {
             InitializeComponent();
+
+            //string path = Directory.GetCurrentDirectory() + "\\Lessons\\files\\";
+            //string fileName = "Introduction.rtf";
+            //this.richTextBox1.LoadFile(path + fileName);
         }
 
         private void grpCodeEditor_Enter(object sender, EventArgs e)

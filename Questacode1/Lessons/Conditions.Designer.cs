@@ -36,7 +36,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(95, 460);
+            textBox1.Location = new Point(100, 561);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(845, 125);
@@ -44,7 +44,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(198, 60);
+            pictureBox1.Location = new Point(201, 82);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(676, 350);
             pictureBox1.TabIndex = 9;
@@ -52,7 +52,7 @@
             // 
             // grpSubTopics
             // 
-            grpSubTopics.Location = new Point(962, 88);
+            grpSubTopics.Location = new Point(976, 12);
             grpSubTopics.Name = "grpSubTopics";
             grpSubTopics.Size = new Size(190, 541);
             grpSubTopics.TabIndex = 8;
@@ -63,7 +63,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1247, 689);
+            ClientSize = new Size(1285, 759);
             Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(grpSubTopics);
