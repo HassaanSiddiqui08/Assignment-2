@@ -47,9 +47,12 @@
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Location = new Point(0, 0);
             richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
             richTextBox1.Size = new Size(992, 753);
             richTextBox1.TabIndex = 4;
             richTextBox1.Text = "";
+            richTextBox1.LinkClicked += richTextBox1_LinkClicked;
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // Introduction
             // 

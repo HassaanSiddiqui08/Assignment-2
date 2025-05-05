@@ -17,9 +17,10 @@ namespace Questacode1
             form.Show();
         }
 
-        public static void LoadFile(string fileName)
-        { 
-        
+        public static void LoadFile(RichTextBox rBox, string fileName)
+        {
+            string path = Directory.GetCurrentDirectory() + "\\Lessons\\files\\";
+            rBox.LoadFile(path + fileName);
         }
     }
 }

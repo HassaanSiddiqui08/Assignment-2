@@ -15,11 +15,38 @@ namespace Questacode1
         public Variables()
         {
             InitializeComponent();
+
+
+            Utilities.LoadFile(richTextBox1, "Variables.rtf");
+
         }
 
         private void grpCodeEditor_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Variables_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(e.LinkText) { UseShellExecute = true });
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Could not open link: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
