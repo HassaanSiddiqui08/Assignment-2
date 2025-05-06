@@ -14,7 +14,7 @@ namespace Questacode1
         {
             Introduction introduction = new Introduction();
             Utilities.SetupForm(introduction, panelLessons.Top, panelLessons.Left, panelLessons.Width);
-            
+
         }
 
         private void eXITToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -128,6 +128,12 @@ namespace Questacode1
             Variables variables = new Variables();
             Utilities.SetupForm(variables, panelLessons.Top, panelLessons.Left, panelLessons.Width);
 
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Progress progress = new Progress();
+            Utilities.SetupForm(progress, panelProgress.Top, panelProgress.Left, panelProgress.Width);
         }
     }
 

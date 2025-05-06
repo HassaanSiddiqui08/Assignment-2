@@ -28,12 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Progress";
+            label1 = new Label();
+            lblCurrentTask = new Label();
+            lblLastCompleted = new Label();
+            label3 = new Label();
+            lblCurrentLevel = new Label();
+            label5 = new Label();
+            lblScore = new Label();
+            label7 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(122, 95);
+            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(137, 31);
+            label1.TabIndex = 0;
+            label1.Text = "Current task";
+            // 
+            // lblCurrentTask
+            // 
+            lblCurrentTask.AutoSize = true;
+            lblCurrentTask.Location = new Point(322, 95);
+            lblCurrentTask.Margin = new Padding(5, 0, 5, 0);
+            lblCurrentTask.Name = "lblCurrentTask";
+            lblCurrentTask.Size = new Size(132, 31);
+            lblCurrentTask.TabIndex = 1;
+            lblCurrentTask.Text = "CurrentTask";
+            // 
+            // lblLastCompleted
+            // 
+            lblLastCompleted.AutoSize = true;
+            lblLastCompleted.Location = new Point(322, 151);
+            lblLastCompleted.Margin = new Padding(5, 0, 5, 0);
+            lblLastCompleted.Name = "lblLastCompleted";
+            lblLastCompleted.Size = new Size(168, 31);
+            lblLastCompleted.TabIndex = 3;
+            lblLastCompleted.Text = "LastCompleted";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(122, 151);
+            label3.Margin = new Padding(5, 0, 5, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(171, 31);
+            label3.TabIndex = 2;
+            label3.Text = "Last completed";
+            // 
+            // lblCurrentLevel
+            // 
+            lblCurrentLevel.AutoSize = true;
+            lblCurrentLevel.Location = new Point(322, 267);
+            lblCurrentLevel.Margin = new Padding(5, 0, 5, 0);
+            lblCurrentLevel.Name = "lblCurrentLevel";
+            lblCurrentLevel.Size = new Size(142, 31);
+            lblCurrentLevel.TabIndex = 7;
+            lblCurrentLevel.Text = "CurrentLevel";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(122, 267);
+            label5.Margin = new Padding(5, 0, 5, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(66, 31);
+            label5.TabIndex = 6;
+            label5.Text = "Level";
+            // 
+            // lblScore
+            // 
+            lblScore.AutoSize = true;
+            lblScore.Location = new Point(322, 211);
+            lblScore.Margin = new Padding(5, 0, 5, 0);
+            lblScore.Name = "lblScore";
+            lblScore.Size = new Size(70, 31);
+            lblScore.TabIndex = 5;
+            lblScore.Text = "Score";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(122, 211);
+            label7.Margin = new Padding(5, 0, 5, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(70, 31);
+            label7.TabIndex = 4;
+            label7.Text = "Score";
+            // 
+            // Progress
+            // 
+            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1300, 698);
+            Controls.Add(lblCurrentLevel);
+            Controls.Add(label5);
+            Controls.Add(lblScore);
+            Controls.Add(label7);
+            Controls.Add(lblLastCompleted);
+            Controls.Add(label3);
+            Controls.Add(lblCurrentTask);
+            Controls.Add(label1);
+            Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(5);
+            Name = "Progress";
+            Text = "Progress";
+            Load += Progress_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label lblCurrentTask;
+        private Label lblLastCompleted;
+        private Label label3;
+        private Label lblCurrentLevel;
+        private Label label5;
+        private Label lblScore;
+        private Label label7;
     }
 }

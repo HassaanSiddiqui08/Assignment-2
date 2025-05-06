@@ -81,46 +81,47 @@
             // menuStrip1
             // 
             menuStrip1.Dock = DockStyle.None;
+            menuStrip1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { lessonsToolStripMenuItem, qUIZZESToolStripMenuItem, gAMEToolStripMenuItem, pROGRESSToolStripMenuItem, eXITToolStripMenuItem });
-            menuStrip1.Location = new Point(249, 30);
+            menuStrip1.Location = new Point(281, 22);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(384, 28);
+            menuStrip1.Size = new Size(485, 36);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // lessonsToolStripMenuItem
             // 
             lessonsToolStripMenuItem.Name = "lessonsToolStripMenuItem";
-            lessonsToolStripMenuItem.Size = new Size(84, 24);
+            lessonsToolStripMenuItem.Size = new Size(108, 32);
             lessonsToolStripMenuItem.Text = "LESSONS";
             lessonsToolStripMenuItem.Click += lessonsToolStripMenuItem_Click;
             // 
             // qUIZZESToolStripMenuItem
             // 
             qUIZZESToolStripMenuItem.Name = "qUIZZESToolStripMenuItem";
-            qUIZZESToolStripMenuItem.Size = new Size(82, 24);
+            qUIZZESToolStripMenuItem.Size = new Size(103, 32);
             qUIZZESToolStripMenuItem.Text = "QUIZZES";
             qUIZZESToolStripMenuItem.Click += qUIZZESToolStripMenuItem_Click;
             // 
             // gAMEToolStripMenuItem
             // 
             gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
-            gAMEToolStripMenuItem.Size = new Size(64, 24);
+            gAMEToolStripMenuItem.Size = new Size(81, 32);
             gAMEToolStripMenuItem.Text = "GAME";
             gAMEToolStripMenuItem.Click += gAMEToolStripMenuItem_Click;
             // 
             // pROGRESSToolStripMenuItem
             // 
             pROGRESSToolStripMenuItem.Name = "pROGRESSToolStripMenuItem";
-            pROGRESSToolStripMenuItem.Size = new Size(94, 24);
+            pROGRESSToolStripMenuItem.Size = new Size(122, 32);
             pROGRESSToolStripMenuItem.Text = "PROGRESS";
             pROGRESSToolStripMenuItem.Click += pROGRESSToolStripMenuItem_Click;
             // 
             // eXITToolStripMenuItem
             // 
             eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
-            eXITToolStripMenuItem.Size = new Size(52, 24);
+            eXITToolStripMenuItem.Size = new Size(63, 32);
             eXITToolStripMenuItem.Text = "EXIT";
             eXITToolStripMenuItem.Click += eXITToolStripMenuItem_Click_1;
             // 
@@ -135,83 +136,84 @@
             // 
             // menuStrip2
             // 
-            menuStrip2.Dock = DockStyle.Left;
+            menuStrip2.Dock = DockStyle.Fill;
+            menuStrip2.Font = new Font("Segoe UI", 12F);
             menuStrip2.ImageScalingSize = new Size(20, 20);
             menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem, basicInputOutputToolStripMenuItem, operatToolStripMenuItem, conditionsToolStripMenuItem, loopsToolStripMenuItem, functionsAndMethodsToolStripMenuItem, arraysAndListsToolStripMenuItem, graphicsAndToolStripMenuItem, creatingAGameToolStripMenuItem });
             menuStrip2.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip2.Location = new Point(0, 0);
             menuStrip2.Name = "menuStrip2";
-            menuStrip2.Size = new Size(188, 623);
+            menuStrip2.Size = new Size(273, 623);
             menuStrip2.TabIndex = 3;
             menuStrip2.Text = "menuStrip2";
             // 
             // introToolStripMenuItem
             // 
             introToolStripMenuItem.Name = "introToolStripMenuItem";
-            introToolStripMenuItem.Size = new Size(104, 24);
+            introToolStripMenuItem.Size = new Size(135, 32);
             introToolStripMenuItem.Text = "Introduction";
             introToolStripMenuItem.Click += introToolStripMenuItem_Click_1;
             // 
             // variablesToolStripMenuItem
             // 
             variablesToolStripMenuItem.Name = "variablesToolStripMenuItem";
-            variablesToolStripMenuItem.Size = new Size(83, 24);
+            variablesToolStripMenuItem.Size = new Size(104, 32);
             variablesToolStripMenuItem.Text = "Variables";
             variablesToolStripMenuItem.Click += variablesToolStripMenuItem_Click;
             // 
             // basicInputOutputToolStripMenuItem
             // 
             basicInputOutputToolStripMenuItem.Name = "basicInputOutputToolStripMenuItem";
-            basicInputOutputToolStripMenuItem.Size = new Size(147, 24);
+            basicInputOutputToolStripMenuItem.Size = new Size(191, 32);
             basicInputOutputToolStripMenuItem.Text = "Basic Input/Output";
             basicInputOutputToolStripMenuItem.Click += basicInputOutputToolStripMenuItem_Click;
             // 
             // operatToolStripMenuItem
             // 
             operatToolStripMenuItem.Name = "operatToolStripMenuItem";
-            operatToolStripMenuItem.Size = new Size(89, 24);
+            operatToolStripMenuItem.Size = new Size(114, 32);
             operatToolStripMenuItem.Text = "Operators";
             operatToolStripMenuItem.Click += operatToolStripMenuItem_Click;
             // 
             // conditionsToolStripMenuItem
             // 
             conditionsToolStripMenuItem.Name = "conditionsToolStripMenuItem";
-            conditionsToolStripMenuItem.Size = new Size(94, 24);
+            conditionsToolStripMenuItem.Size = new Size(121, 32);
             conditionsToolStripMenuItem.Text = "Conditions";
             conditionsToolStripMenuItem.Click += conditionsToolStripMenuItem_Click;
             // 
             // loopsToolStripMenuItem
             // 
             loopsToolStripMenuItem.Name = "loopsToolStripMenuItem";
-            loopsToolStripMenuItem.Size = new Size(63, 24);
+            loopsToolStripMenuItem.Size = new Size(79, 32);
             loopsToolStripMenuItem.Text = "Loops";
             loopsToolStripMenuItem.Click += loopsToolStripMenuItem_Click;
             // 
             // functionsAndMethodsToolStripMenuItem
             // 
             functionsAndMethodsToolStripMenuItem.Name = "functionsAndMethodsToolStripMenuItem";
-            functionsAndMethodsToolStripMenuItem.Size = new Size(176, 24);
+            functionsAndMethodsToolStripMenuItem.Size = new Size(231, 32);
             functionsAndMethodsToolStripMenuItem.Text = "Functions and Methods";
             functionsAndMethodsToolStripMenuItem.Click += functionsAndMethodsToolStripMenuItem_Click;
             // 
             // arraysAndListsToolStripMenuItem
             // 
             arraysAndListsToolStripMenuItem.Name = "arraysAndListsToolStripMenuItem";
-            arraysAndListsToolStripMenuItem.Size = new Size(125, 24);
+            arraysAndListsToolStripMenuItem.Size = new Size(161, 32);
             arraysAndListsToolStripMenuItem.Text = "Arrays and Lists";
             arraysAndListsToolStripMenuItem.Click += arraysAndListsToolStripMenuItem_Click;
             // 
             // graphicsAndToolStripMenuItem
             // 
             graphicsAndToolStripMenuItem.Name = "graphicsAndToolStripMenuItem";
-            graphicsAndToolStripMenuItem.Size = new Size(182, 24);
+            graphicsAndToolStripMenuItem.Size = new Size(236, 32);
             graphicsAndToolStripMenuItem.Text = "Graphics and Animation";
             graphicsAndToolStripMenuItem.Click += graphicsAndToolStripMenuItem_Click;
             // 
             // creatingAGameToolStripMenuItem
             // 
             creatingAGameToolStripMenuItem.Name = "creatingAGameToolStripMenuItem";
-            creatingAGameToolStripMenuItem.Size = new Size(133, 24);
+            creatingAGameToolStripMenuItem.Size = new Size(169, 32);
             creatingAGameToolStripMenuItem.Text = "Creating a game";
             creatingAGameToolStripMenuItem.Click += creatingAGameToolStripMenuItem_Click;
             // 
@@ -226,26 +228,27 @@
             // 
             // menuStrip3
             // 
-            menuStrip3.Dock = DockStyle.Left;
+            menuStrip3.Dock = DockStyle.Fill;
+            menuStrip3.Font = new Font("Segoe UI", 12F);
             menuStrip3.ImageScalingSize = new Size(20, 20);
             menuStrip3.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2 });
             menuStrip3.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip3.Location = new Point(0, 0);
             menuStrip3.Name = "menuStrip3";
-            menuStrip3.Size = new Size(71, 623);
+            menuStrip3.Size = new Size(273, 623);
             menuStrip3.TabIndex = 3;
             menuStrip3.Text = "menuStrip3";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(65, 24);
+            toolStripMenuItem1.Size = new Size(82, 32);
             toolStripMenuItem1.Text = "Quiz 1";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(65, 24);
+            toolStripMenuItem2.Size = new Size(82, 32);
             toolStripMenuItem2.Text = "Quiz 2";
             // 
             // panelGames
@@ -259,20 +262,21 @@
             // 
             // menuStrip4
             // 
-            menuStrip4.Dock = DockStyle.Left;
+            menuStrip4.Dock = DockStyle.Fill;
+            menuStrip4.Font = new Font("Segoe UI", 12F);
             menuStrip4.ImageScalingSize = new Size(20, 20);
             menuStrip4.Items.AddRange(new ToolStripItem[] { toolStripMenuItem3 });
             menuStrip4.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip4.Location = new Point(0, 0);
             menuStrip4.Name = "menuStrip4";
-            menuStrip4.Size = new Size(99, 623);
+            menuStrip4.Size = new Size(273, 623);
             menuStrip4.TabIndex = 3;
             menuStrip4.Text = "menuStrip4";
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(93, 24);
+            toolStripMenuItem3.Size = new Size(118, 32);
             toolStripMenuItem3.Text = "Play Game";
             // 
             // panelProgress
@@ -286,21 +290,23 @@
             // 
             // menuStrip5
             // 
-            menuStrip5.Dock = DockStyle.Left;
+            menuStrip5.Dock = DockStyle.Fill;
+            menuStrip5.Font = new Font("Segoe UI", 12F);
             menuStrip5.ImageScalingSize = new Size(20, 20);
             menuStrip5.Items.AddRange(new ToolStripItem[] { toolStripMenuItem4 });
             menuStrip5.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip5.Location = new Point(0, 0);
             menuStrip5.Name = "menuStrip5";
-            menuStrip5.Size = new Size(85, 623);
+            menuStrip5.Size = new Size(273, 623);
             menuStrip5.TabIndex = 3;
             menuStrip5.Text = "menuStrip5";
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(79, 24);
+            toolStripMenuItem4.Size = new Size(101, 32);
             toolStripMenuItem4.Text = "Progress";
+            toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // Main
             // 

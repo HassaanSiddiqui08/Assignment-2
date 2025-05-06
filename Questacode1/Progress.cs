@@ -16,5 +16,17 @@ namespace Questacode1
         {
             InitializeComponent();
         }
+
+        private void Progress_Load(object sender, EventArgs e)
+        {
+            User user = new User();
+
+            user = user.RetrieveProgress();
+
+            lblCurrentTask.Text = user.CurrentTask;
+            lblLastCompleted.Text = user.LastCompletedTask;
+            lblScore.Text = user.Score.ToString();
+            lblCurrentLevel.Text = user.CurrentLevel.ToString();
+        }
     }
 }

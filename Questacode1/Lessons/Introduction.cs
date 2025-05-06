@@ -45,5 +45,16 @@ namespace Questacode1
                 MessageBox.Show($"Could not open link: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.CurrentTask = "Introduction";
+            user.LastCompletedTask = "";
+            user.Score = 5;
+            user.CurrentLevel = 0;
+
+            user.SaveProgress();
+        }
     }
 }

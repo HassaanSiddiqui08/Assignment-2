@@ -22,5 +22,6 @@ namespace Questacode1
             string path = Directory.GetCurrentDirectory() + "\\Lessons\\files\\";
             rBox.LoadFile(path + fileName);
         }
+       
     }
 }

@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            grpSubTopics = new GroupBox();
             richTextBox1 = new RichTextBox();
+            btnDone = new Button();
             SuspendLayout();
-            // 
-            // grpSubTopics
-            // 
-            grpSubTopics.Dock = DockStyle.Right;
-            grpSubTopics.Location = new Point(992, 0);
-            grpSubTopics.Name = "grpSubTopics";
-            grpSubTopics.Size = new Size(190, 753);
-            grpSubTopics.TabIndex = 3;
-            grpSubTopics.TabStop = false;
-            grpSubTopics.Text = "Sub Topics";
             // 
             // richTextBox1
             // 
@@ -48,19 +38,30 @@
             richTextBox1.Location = new Point(0, 0);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(992, 753);
+            richTextBox1.Size = new Size(1182, 753);
             richTextBox1.TabIndex = 4;
             richTextBox1.Text = "";
             richTextBox1.LinkClicked += richTextBox1_LinkClicked;
             richTextBox1.TextChanged += richTextBox1_TextChanged;
+            // 
+            // btnDone
+            // 
+            btnDone.Dock = DockStyle.Bottom;
+            btnDone.Location = new Point(0, 724);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(1182, 29);
+            btnDone.TabIndex = 5;
+            btnDone.Text = "Done";
+            btnDone.UseVisualStyleBackColor = true;
+            btnDone.Click += btnDone_Click;
             // 
             // Introduction
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 753);
+            Controls.Add(btnDone);
             Controls.Add(richTextBox1);
-            Controls.Add(grpSubTopics);
             Location = new Point(500, 200);
             Name = "Introduction";
             StartPosition = FormStartPosition.Manual;
@@ -69,8 +70,7 @@
         }
 
         #endregion
-
-        private GroupBox grpSubTopics;
         private RichTextBox richTextBox1;
+        private Button btnDone;
     }
 }
