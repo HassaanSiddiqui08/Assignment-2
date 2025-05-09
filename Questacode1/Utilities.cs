@@ -12,6 +12,8 @@ namespace Questacode1
         public static void SetupForm(Form form, int top, int left, int width)
         {
             form.StartPosition = FormStartPosition.Manual;
+            form.Width = 1200;
+            form.Height = 800;
             form.Left = width + 10;
             form.Top = top + 35;
             form.Show();

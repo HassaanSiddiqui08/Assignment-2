@@ -135,6 +135,12 @@ namespace Questacode1
             Progress progress = new Progress();
             Utilities.SetupForm(progress, panelProgress.Top, panelProgress.Left, panelProgress.Width);
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Quizzes quizzes = new Quizzes();
+            Utilities.SetupForm(quizzes, panelLessons.Top, panelLessons.Left, panelLessons.Width);
+        }
     }
 
 }
