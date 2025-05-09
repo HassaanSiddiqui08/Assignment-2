@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,15 @@ namespace Questacode1
             string path = Directory.GetCurrentDirectory() + "\\Lessons\\files\\";
             rBox.LoadFile(path + fileName);
         }
-       
+
+        public static void PlaySound(string fileName)
+        {
+            string path = Directory.GetCurrentDirectory() + "\\Sounds\\";
+            SoundPlayer soundPlayer = new SoundPlayer();
+            soundPlayer.SoundLocation = path + fileName;
+            soundPlayer.Play();
+
+        }
+
     }
 }

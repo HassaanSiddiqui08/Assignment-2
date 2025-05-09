@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
 
 namespace Questacode1
 {
@@ -22,9 +24,7 @@ namespace Questacode1
             ShowQuestion();
 
             labelScore.Text = $"Score: {score}";
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            radioButton3.Checked = false;
+            
         }
 
         private void LoadQuestions()
@@ -42,9 +42,17 @@ namespace Questacode1
                     QuestionText = "What is a datatype?",
                     Options = new string[] { "a liquid", "type of a variable", "a car" },
                     CorrectAnswerIndex = 1,
+                },
+                new Question
+                {
+                    QuestionText = "What is a procedure?",
+                    Options = new string[] { "crazy person", "a good boy", "set of instructions" },
+                    CorrectAnswerIndex = 2,
                 }
                 //todo: add more questions
             };
+            
+            questions = questions.OrderBy(x => Guid.NewGuid()).ToList();
         }
 
         private void ShowQuestion()
@@ -102,10 +110,12 @@ namespace Questacode1
             if (selectedAnswerIndex == questions[currentQuestionIndex].CorrectAnswerIndex)
             {
                 score++;
+                Utilities.PlaySound("family-applause.wav");
                 MessageBox.Show("Correct!");
             }
             else
             {
+                Utilities.PlaySound("wrong-choice.wav");
                 MessageBox.Show($"Incorrect. The correct answer was: {questions[currentQuestionIndex].Options[questions[currentQuestionIndex].CorrectAnswerIndex]}", "Result");
             }
 
@@ -120,6 +130,7 @@ namespace Questacode1
             ShowQuestion();
         }
 
+       
         private void Quizzes_Load(object sender, EventArgs e)
         {
 
