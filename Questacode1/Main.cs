@@ -77,7 +77,7 @@ namespace Questacode1
 
         private void basicInputOutputToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Basic basic = new Basic();
+            FirstProgram basic = new FirstProgram();
             Utilities.SetupForm(basic, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
 
