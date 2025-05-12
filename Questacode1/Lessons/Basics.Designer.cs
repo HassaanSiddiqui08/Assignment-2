@@ -59,9 +59,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(71, 444);
             label1.Name = "label1";
-            label1.Size = new Size(43, 20);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 9;
-            label1.Text = "Read";
+            label1.Text = "label1";
             label1.MouseDown += label1_MouseDown;
             // 
             // panel1
@@ -83,16 +83,16 @@
             labelCode.Name = "labelCode";
             labelCode.Size = new Size(524, 244);
             labelCode.TabIndex = 11;
-            labelCode.Text = "\r\npublic class MyClass {\r\n      public static void Main(string[] args) {\r\n\r\n          Console.                                                               (\"Hello, World!\");\r\n\r\n      }\r\n  }";
+            labelCode.Text = "labelCode";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(71, 498);
             label2.Name = "label2";
-            label2.Size = new Size(72, 20);
+            label2.Size = new Size(50, 20);
             label2.TabIndex = 12;
-            label2.Text = "WriteLine";
+            label2.Text = "label2";
             label2.MouseDown += label2_MouseDown;
             // 
             // label3
@@ -100,9 +100,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(71, 554);
             label3.Name = "label3";
-            label3.Size = new Size(45, 20);
+            label3.Size = new Size(50, 20);
             label3.TabIndex = 13;
-            label3.Text = "Hello";
+            label3.Text = "label3";
             label3.MouseDown += label3_MouseDown;
             // 
             // FirstProgram

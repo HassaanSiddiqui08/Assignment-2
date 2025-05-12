@@ -12,9 +12,31 @@ namespace Questacode1.Lessons
 {
     public partial class FirstProgram : Form
     {
+        string qText = "\r\npublic class MyClass {\r\n      public static void Main(string[] args) {\r\n\r\n          Console.                                                               (\"Hello, World!\");\r\n\r\n      }\r\n  }";
+        
+        Question question;
+
+
         public FirstProgram()
         {
             InitializeComponent();
+
+            question = new Question()
+            {
+                QuestionText = qText,
+                Options = new string[] { "Read", "WriteLine", "Hello" },
+                CorrectAnswerIndex = 1
+            };
+
+            LoadQuestion();
+        }
+
+        private void LoadQuestion()
+        {
+            labelCode.Text = question.QuestionText;
+            label1.Text = question.Options[0];
+            label2.Text = question.Options[1];
+            label3.Text = question.Options[2];
         }
 
         private void label1_MouseDown(object sender, MouseEventArgs e)
@@ -69,13 +91,24 @@ namespace Questacode1.Lessons
             panel1.Controls.Clear();    // Clear any previous content
             panel1.Controls.Add(newLabel);
 
-            //Or if the dropPanel1 is actually a Label
-            //dropPanel1.Text = draggedText;
-
-            //You might want to check here if the draggedText is the correct answer
-            if (draggedText == "static")
+            // Check if the dropped text is the correct answer
+            if (draggedText == question.Options[question.CorrectAnswerIndex])
             {
-                //do something
+                Utilities.PlaySound("family-applause.wav");
+                MessageBox.Show("Correct Answer!");
+                
+                // You might also want to disable further drops or load the next question here.
+                // For example:
+                // label1.Enabled = false;
+                // label2.Enabled = false;
+                // label3.Enabled = false;
+                // nextButton.Enabled = true; //if you have a next button
+            }
+            else
+            {
+                Utilities.PlaySound("wrong-choice.wav");
+                MessageBox.Show("Incorrect Answer, Try Again");
+                panel1.Controls.Clear(); //remove the label.
             }
         }
     }
