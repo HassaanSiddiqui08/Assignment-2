@@ -81,6 +81,10 @@ namespace Questacode1
             {
                 //quiz is finished
                 MessageBox.Show($"Your score is {score} out of {questions.Count}");
+
+                // save changes to Quiz score
+                Properties.Settings.Default.QuizScore = score;
+                Properties.Settings.Default.Save(); // Saves the changes to the user.config file
             }
         }
 
@@ -128,6 +132,8 @@ namespace Questacode1
         {
             currentQuestionIndex += 1;
             ShowQuestion();
+
+
         }
 
        
