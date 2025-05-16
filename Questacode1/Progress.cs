@@ -27,6 +27,7 @@ namespace Questacode1
             lblLastCompleted.Text = user.LastCompletedTask;
             lblScore.Text = user.Score.ToString();
             lblCurrentLevel.Text = user.CurrentLevel.ToString();
+            lblQuizScore.Text = user.QuizScore.ToString();
         }
     }
 }

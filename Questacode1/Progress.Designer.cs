@@ -36,6 +36,8 @@
             label5 = new Label();
             lblScore = new Label();
             label7 = new Label();
+            label6 = new Label();
+            lblQuizScore = new Label();
             SuspendLayout();
             // 
             // label1
@@ -118,11 +120,33 @@
             label7.TabIndex = 4;
             label7.Text = "Score";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(122, 325);
+            label6.Margin = new Padding(5, 0, 5, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(116, 31);
+            label6.TabIndex = 8;
+            label6.Text = "QuizScore";
+            // 
+            // lblQuizScore
+            // 
+            lblQuizScore.AutoSize = true;
+            lblQuizScore.Location = new Point(322, 325);
+            lblQuizScore.Margin = new Padding(5, 0, 5, 0);
+            lblQuizScore.Name = "lblQuizScore";
+            lblQuizScore.Size = new Size(116, 31);
+            lblQuizScore.TabIndex = 9;
+            lblQuizScore.Text = "QuizScore";
+            // 
             // Progress
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1300, 698);
+            Controls.Add(lblQuizScore);
+            Controls.Add(label6);
             Controls.Add(lblCurrentLevel);
             Controls.Add(label5);
             Controls.Add(lblScore);
@@ -150,5 +174,7 @@
         private Label label5;
         private Label lblScore;
         private Label label7;
+        private Label label6;
+        private Label lblQuizScore;
     }
 }

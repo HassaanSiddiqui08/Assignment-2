@@ -13,6 +13,7 @@ namespace Questacode1
         public string LastCompletedTask { get; set; }
         public int Score { get; set; }
         public int CurrentLevel { get; set; }
+        public int QuizScore { get; set; }
 
         public void SaveProgress()
         {
@@ -21,6 +22,7 @@ namespace Questacode1
             Properties.Settings.Default.Score = Score;
             Properties.Settings.Default.LastCompletedTask = LastCompletedTask;
             Properties.Settings.Default.CurrentTask = CurrentTask;
+            Properties.Settings.Default.QuizScore = QuizScore;
             Properties.Settings.Default.Save(); // Saves the changes to the user.config file
         }
 
@@ -32,6 +34,7 @@ namespace Questacode1
             user.Score = Properties.Settings.Default.Score;
             user.LastCompletedTask = Properties.Settings.Default.LastCompletedTask;
             user.CurrentTask = Properties.Settings.Default.CurrentTask;
+            user.QuizScore = Properties.Settings.Default.QuizScore;
 
             return user;
         }

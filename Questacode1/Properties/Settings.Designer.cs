@@ -70,5 +70,17 @@ namespace Questacode1.Properties {
                 this["CurrentLevel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int QuizScore {
+            get {
+                return ((int)(this["QuizScore"]));
+            }
+            set {
+                this["QuizScore"] = value;
+            }
+        }
     }
 }
