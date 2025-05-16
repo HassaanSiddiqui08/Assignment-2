@@ -32,6 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Lessons\files\BasicInputOutput.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Lessons\files\Introduction.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

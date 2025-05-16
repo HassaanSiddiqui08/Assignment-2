@@ -35,6 +35,7 @@
             labelCode = new Label();
             label2 = new Label();
             label3 = new Label();
+            btnDone = new Button();
             SuspendLayout();
             // 
             // grpSubTopics
@@ -53,6 +54,7 @@
             richTextBox1.Size = new Size(1026, 406);
             richTextBox1.TabIndex = 8;
             richTextBox1.Text = "";
+            richTextBox1.LinkClicked += richTextBox1_LinkClicked;
             // 
             // label1
             // 
@@ -105,11 +107,23 @@
             label3.Text = "label3";
             label3.MouseDown += label3_MouseDown;
             // 
+            // btnDone
+            // 
+            btnDone.Dock = DockStyle.Bottom;
+            btnDone.Location = new Point(0, 646);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(1242, 38);
+            btnDone.TabIndex = 14;
+            btnDone.Text = "Done";
+            btnDone.UseVisualStyleBackColor = true;
+            btnDone.Click += btnDone_Click;
+            // 
             // FirstProgram
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1242, 684);
+            Controls.Add(btnDone);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel1);
@@ -131,5 +145,6 @@
         private Label labelCode;
         private Label label2;
         private Label label3;
+        private Button btnDone;
     }
 }

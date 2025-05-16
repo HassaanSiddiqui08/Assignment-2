@@ -13,13 +13,14 @@ namespace Questacode1.Lessons
     public partial class FirstProgram : Form
     {
         string qText = "\r\npublic class MyClass {\r\n      public static void Main(string[] args) {\r\n\r\n          Console.                                                               (\"Hello, World!\");\r\n\r\n      }\r\n  }";
-        
+
         Question question;
 
 
         public FirstProgram()
         {
             InitializeComponent();
+            Utilities.LoadFile(richTextBox1, "BasicInputOutput.rtf");
 
             question = new Question()
             {
@@ -96,7 +97,7 @@ namespace Questacode1.Lessons
             {
                 Utilities.PlaySound("family-applause.wav");
                 MessageBox.Show("Correct Answer!");
-                
+
                 // You might also want to disable further drops or load the next question here.
                 // For example:
                 // label1.Enabled = false;
@@ -110,6 +111,30 @@ namespace Questacode1.Lessons
                 MessageBox.Show("Incorrect Answer, Try Again");
                 panel1.Controls.Clear(); //remove the label.
             }
+        }
+
+        private void richTextBox1_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(e.LinkText) { UseShellExecute = true });
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Could not open link: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.CurrentTask = "Basics";
+            user.LastCompletedTask = "Variables";
+            user.Score = 5;
+            user.CurrentLevel = 1;
+
+            user.SaveProgress();
         }
     }
 }
