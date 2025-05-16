@@ -98,12 +98,6 @@ namespace Questacode1.Lessons
                 Utilities.PlaySound("family-applause.wav");
                 MessageBox.Show("Correct Answer!");
 
-                // You might also want to disable further drops or load the next question here.
-                // For example:
-                // label1.Enabled = false;
-                // label2.Enabled = false;
-                // label3.Enabled = false;
-                // nextButton.Enabled = true; //if you have a next button
             }
             else
             {
