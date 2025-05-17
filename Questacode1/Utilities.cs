@@ -10,6 +10,7 @@ namespace Questacode1
 {
     public static class Utilities
     {
+        public static bool isParent = false; //check if its parent or student
         public static void SetupForm(Form form, int top, int left, int width)
         {
             form.StartPosition = FormStartPosition.Manual;
@@ -35,5 +36,6 @@ namespace Questacode1
 
         }
 
+        
     }
 }

@@ -7,8 +7,28 @@ namespace Questacode1
         public Main()
         {
             InitializeComponent();
+            ShowLoginForm();
             this.IsMdiContainer = true;
         }
+
+        private void ShowLoginForm()
+        {
+            Login login = new Login();
+            DialogResult result = login.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                
+
+
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                this.Close();
+            }
+        }
+
+       
 
         private void introToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
