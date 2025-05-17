@@ -18,9 +18,11 @@ namespace Questacode1
 
             if (result == DialogResult.OK)
             {
+                if (Utilities.isParent == false) // student cannot check its own progress
+                {
+                    pROGRESSToolStripMenuItem.Visible = false;
+                }
                 
-
-
             }
             else if (result == DialogResult.Cancel)
             {
