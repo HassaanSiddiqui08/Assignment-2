@@ -19,7 +19,7 @@ namespace Questacode1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (ValidateLogin(txtUserName.Text, txtPassword.Text))
+            if (ValidateLogin(txtUserName.Text, txtPassword.Text) == true)
             {
                 MessageBox.Show("Login successful!", "Success");
                 this.DialogResult = DialogResult.OK;
@@ -58,9 +58,9 @@ namespace Questacode1
                     if (parts.Length == 2)
                     {
                         string storedUsername = parts[0].Trim();
-                        string storedPassword = parts[1].Trim();  
+                        string storedPassword = parts[1].Trim();
 
-                        if (username == storedUsername && password == storedPassword) 
+                        if (username == storedUsername && password == storedPassword)
                         {
                             if (storedUsername.Contains("parent"))
                             {
@@ -69,14 +69,14 @@ namespace Questacode1
                             return true; // Login successful
                         }
                     }
-                    
+
                 }
             }
             catch (FileNotFoundException)
             {
                 // Handle the case where the file doesn't exist
                 MessageBox.Show("Credentials file not found.  Please contact your administrator.", "Error");
-                return false; 
+                return false;
             }
             catch (IOException ex)
             {
