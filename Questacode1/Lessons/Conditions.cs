@@ -12,7 +12,7 @@ namespace Questacode1.Lessons
 {
     public partial class Conditions : Form
     {
-        string qText = "\r\n\r\n\r\n\r\nif (20                                                                               18;\r\n\r\n";
+        string qText = "\r\nDrag and drop the correct operator to check if 20 is greater than 10 \r\n\r\n\r\nif (20                                                                               18;\r\n\r\n";
 
         Question question;
         public Conditions()
