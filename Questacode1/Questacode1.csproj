@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Lessons\ArrayNList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Lessons\Variables.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Lessons\files\Arrays.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Lessons\files\BasicInputOutput.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

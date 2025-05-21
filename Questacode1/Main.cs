@@ -129,7 +129,7 @@ namespace Questacode1
 
         private void arraysAndListsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ArrayList arrayNList = new ArrayList();
+            ArrayNList arrayNList = new ArrayNList();
             Utilities.SetupForm(arrayNList, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
 
