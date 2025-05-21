@@ -41,6 +41,9 @@
     <None Update="Lessons\files\Conditions.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Lessons\files\Functions.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Lessons\files\Introduction.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
