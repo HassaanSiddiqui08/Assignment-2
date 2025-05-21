@@ -133,18 +133,7 @@ namespace Questacode1
             Utilities.SetupForm(arrayNList, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
 
-        private void graphicsAndToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GraphicsAnimations graphicsAnimations = new GraphicsAnimations();
-            Utilities.SetupForm(graphicsAnimations, panelLessons.Top, panelLessons.Left, panelLessons.Width);
-        }
-
-        private void creatingAGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CreateGame createGame = new CreateGame();
-            Utilities.SetupForm(createGame, panelLessons.Top, panelLessons.Left, panelLessons.Width);
-        }
-
+       
         private void variablesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Variables variables = new Variables();

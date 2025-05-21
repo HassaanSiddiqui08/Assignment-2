@@ -44,6 +44,9 @@
     <None Update="Lessons\files\Introduction.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Lessons\files\Loops.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Lessons\files\Operators.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

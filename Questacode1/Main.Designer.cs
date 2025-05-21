@@ -45,8 +45,6 @@
             loopsToolStripMenuItem = new ToolStripMenuItem();
             functionsAndMethodsToolStripMenuItem = new ToolStripMenuItem();
             arraysAndListsToolStripMenuItem = new ToolStripMenuItem();
-            graphicsAndToolStripMenuItem = new ToolStripMenuItem();
-            creatingAGameToolStripMenuItem = new ToolStripMenuItem();
             panelQuizzes = new Panel();
             menuStrip3 = new MenuStrip();
             toolStripMenuItem1 = new ToolStripMenuItem();
@@ -139,7 +137,7 @@
             menuStrip2.Dock = DockStyle.Fill;
             menuStrip2.Font = new Font("Segoe UI", 12F);
             menuStrip2.ImageScalingSize = new Size(20, 20);
-            menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem, basicInputOutputToolStripMenuItem, operatToolStripMenuItem, conditionsToolStripMenuItem, loopsToolStripMenuItem, functionsAndMethodsToolStripMenuItem, arraysAndListsToolStripMenuItem, graphicsAndToolStripMenuItem, creatingAGameToolStripMenuItem });
+            menuStrip2.Items.AddRange(new ToolStripItem[] { introToolStripMenuItem, variablesToolStripMenuItem, basicInputOutputToolStripMenuItem, operatToolStripMenuItem, conditionsToolStripMenuItem, loopsToolStripMenuItem, functionsAndMethodsToolStripMenuItem, arraysAndListsToolStripMenuItem });
             menuStrip2.LayoutStyle = ToolStripLayoutStyle.Table;
             menuStrip2.Location = new Point(0, 0);
             menuStrip2.Name = "menuStrip2";
@@ -202,20 +200,6 @@
             arraysAndListsToolStripMenuItem.Size = new Size(161, 32);
             arraysAndListsToolStripMenuItem.Text = "Arrays and Lists";
             arraysAndListsToolStripMenuItem.Click += arraysAndListsToolStripMenuItem_Click;
-            // 
-            // graphicsAndToolStripMenuItem
-            // 
-            graphicsAndToolStripMenuItem.Name = "graphicsAndToolStripMenuItem";
-            graphicsAndToolStripMenuItem.Size = new Size(236, 32);
-            graphicsAndToolStripMenuItem.Text = "Graphics and Animation";
-            graphicsAndToolStripMenuItem.Click += graphicsAndToolStripMenuItem_Click;
-            // 
-            // creatingAGameToolStripMenuItem
-            // 
-            creatingAGameToolStripMenuItem.Name = "creatingAGameToolStripMenuItem";
-            creatingAGameToolStripMenuItem.Size = new Size(169, 32);
-            creatingAGameToolStripMenuItem.Text = "Creating a game";
-            creatingAGameToolStripMenuItem.Click += creatingAGameToolStripMenuItem_Click;
             // 
             // panelQuizzes
             // 
@@ -374,7 +358,5 @@
         private ToolStripMenuItem loopsToolStripMenuItem;
         private ToolStripMenuItem functionsAndMethodsToolStripMenuItem;
         private ToolStripMenuItem arraysAndListsToolStripMenuItem;
-        private ToolStripMenuItem graphicsAndToolStripMenuItem;
-        private ToolStripMenuItem creatingAGameToolStripMenuItem;
     }
 }

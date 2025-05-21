@@ -118,7 +118,7 @@
             btnDone.UseVisualStyleBackColor = true;
             btnDone.Click += btnDone_Click;
             // 
-            // Operators
+            // Conditions
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -131,8 +131,8 @@
             Controls.Add(richTextBox1);
             Controls.Add(grpSubTopics);
             Controls.Add(labelCode);
-            Name = "Operators";
-            Text = "Operators";
+            Name = "Conditions";
+            Text = "Conditions";
             ResumeLayout(false);
             PerformLayout();
         }
