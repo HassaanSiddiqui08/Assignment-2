@@ -29,5 +29,11 @@ namespace Questacode1
             lblCurrentLevel.Text = user.CurrentLevel.ToString();
             lblQuizScore.Text = user.QuizScore.ToString();
         }
+
+        private void btnSet_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.QuizScore = Convert.ToInt32(txtQuestions.Text);
+            Properties.Settings.Default.Save();
+        }
     }
 }

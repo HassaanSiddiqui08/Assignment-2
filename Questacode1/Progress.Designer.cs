@@ -38,6 +38,9 @@
             label7 = new Label();
             label6 = new Label();
             lblQuizScore = new Label();
+            label2 = new Label();
+            txtQuestions = new TextBox();
+            btnSet = new Button();
             SuspendLayout();
             // 
             // label1
@@ -140,11 +143,41 @@
             lblQuizScore.TabIndex = 9;
             lblQuizScore.Text = "QuizScore";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(122, 389);
+            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(162, 31);
+            label2.TabIndex = 10;
+            label2.Text = "QuizQuestions";
+            // 
+            // txtQuestions
+            // 
+            txtQuestions.Location = new Point(339, 392);
+            txtQuestions.Name = "txtQuestions";
+            txtQuestions.Size = new Size(125, 38);
+            txtQuestions.TabIndex = 11;
+            // 
+            // btnSet
+            // 
+            btnSet.Location = new Point(518, 392);
+            btnSet.Name = "btnSet";
+            btnSet.Size = new Size(91, 38);
+            btnSet.TabIndex = 12;
+            btnSet.Text = "Set";
+            btnSet.UseVisualStyleBackColor = true;
+            btnSet.Click += btnSet_Click;
+            // 
             // Progress
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1300, 698);
+            Controls.Add(btnSet);
+            Controls.Add(txtQuestions);
+            Controls.Add(label2);
             Controls.Add(lblQuizScore);
             Controls.Add(label6);
             Controls.Add(lblCurrentLevel);
@@ -176,5 +209,8 @@
         private Label label7;
         private Label label6;
         private Label lblQuizScore;
+        private Label label2;
+        private TextBox txtQuestions;
+        private Button btnSet;
     }
 }

@@ -12,19 +12,17 @@ using System.IO;
 
 namespace Questacode1
 {
-    public partial class Quizzes : Form
+    public partial class Quizzes2 : Form
     {
         private List<Question> questions;
         private int currentQuestionIndex = 0;
         private int score = 0;
-
         private int numberOfQuestions = 0;
-        public Quizzes()
+        public Quizzes2()
         {
             InitializeComponent();
             numberOfQuestions = Properties.Settings.Default.QuizScore;
             LoadQuestions();
-            
             ShowQuestion();
 
             labelScore.Text = $"Score: {score}";
@@ -193,8 +191,6 @@ namespace Questacode1
                 // save changes to Quiz score
                 Properties.Settings.Default.QuizScore = score;
                 Properties.Settings.Default.Save(); // Saves the changes to the user.config file
-                buttonNext.Text = "Finish";
-                buttonNext.Enabled = false;
             }
         }
 

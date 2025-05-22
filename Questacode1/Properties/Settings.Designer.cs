@@ -82,5 +82,17 @@ namespace Questacode1.Properties {
                 this["QuizScore"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int QuizQuestions {
+            get {
+                return ((int)(this["QuizQuestions"]));
+            }
+            set {
+                this["QuizQuestions"] = value;
+            }
+        }
     }
 }

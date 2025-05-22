@@ -235,6 +235,7 @@
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.Size = new Size(82, 32);
             toolStripMenuItem2.Text = "Quiz 2";
+            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // panelGames
             // 

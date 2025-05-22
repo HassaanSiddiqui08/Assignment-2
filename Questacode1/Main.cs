@@ -22,7 +22,7 @@ namespace Questacode1
                 {
                     pROGRESSToolStripMenuItem.Visible = false;
                 }
-                
+
             }
             else if (result == DialogResult.Cancel)
             {
@@ -30,7 +30,7 @@ namespace Questacode1
             }
         }
 
-       
+
 
         private void introToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -133,7 +133,7 @@ namespace Questacode1
             Utilities.SetupForm(arrayNList, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
 
-       
+
         private void variablesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Variables variables = new Variables();
@@ -151,6 +151,12 @@ namespace Questacode1
         {
             Quizzes quizzes = new Quizzes();
             Utilities.SetupForm(quizzes, panelLessons.Top, panelLessons.Left, panelLessons.Width);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Quizzes2 Quiz = new Quizzes2();
+            Utilities.SetupForm(Quiz, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
     }
 
