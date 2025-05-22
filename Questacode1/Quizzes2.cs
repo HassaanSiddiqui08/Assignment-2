@@ -191,6 +191,8 @@ namespace Questacode1
                 // save changes to Quiz score
                 Properties.Settings.Default.QuizScore = score;
                 Properties.Settings.Default.Save(); // Saves the changes to the user.config file
+                buttonNext.Text = "Finish";
+                buttonNext.Enabled = false;
             }
         }
 
