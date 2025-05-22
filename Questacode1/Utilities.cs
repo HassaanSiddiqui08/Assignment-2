@@ -18,6 +18,7 @@ namespace Questacode1
             form.Height = 800;
             form.Left = width + 10;
             form.Top = top + 35;
+            form.BackColor = Color.LightCyan;
             form.Show();
         }
 

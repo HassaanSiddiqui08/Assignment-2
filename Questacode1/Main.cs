@@ -158,6 +158,12 @@ namespace Questacode1
             Quizzes2 Quiz = new Quizzes2();
             Utilities.SetupForm(Quiz, panelLessons.Top, panelLessons.Left, panelLessons.Width);
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Game game = new Game();
+            Utilities.SetupForm(game, panelLessons.Top, panelLessons.Left, panelLessons.Width);
+        }
     }
 
 }

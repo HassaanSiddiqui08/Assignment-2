@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            grpSubTopics = new GroupBox();
             richTextBox1 = new RichTextBox();
             label1 = new Label();
             panel1 = new Panel();
@@ -38,20 +37,11 @@
             btnDone = new Button();
             SuspendLayout();
             // 
-            // grpSubTopics
-            // 
-            grpSubTopics.Location = new Point(1040, 12);
-            grpSubTopics.Name = "grpSubTopics";
-            grpSubTopics.Size = new Size(190, 541);
-            grpSubTopics.TabIndex = 7;
-            grpSubTopics.TabStop = false;
-            grpSubTopics.Text = "Sub Topics";
-            // 
             // richTextBox1
             // 
             richTextBox1.Location = new Point(8, 12);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1026, 406);
+            richTextBox1.Size = new Size(1222, 406);
             richTextBox1.TabIndex = 8;
             richTextBox1.Text = "";
             richTextBox1.LinkClicked += richTextBox1_LinkClicked;
@@ -118,7 +108,7 @@
             btnDone.UseVisualStyleBackColor = true;
             btnDone.Click += btnDone_Click;
             // 
-            // Conditions
+            // ArrayNList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -129,16 +119,14 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(richTextBox1);
-            Controls.Add(grpSubTopics);
             Controls.Add(labelCode);
-            Name = "Conditions";
+            Name = "ArrayNList";
             Text = "Conditions";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private GroupBox grpSubTopics;
         private RichTextBox richTextBox1;
         private Label label1;
         private Panel panel1;

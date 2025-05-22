@@ -84,7 +84,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { lessonsToolStripMenuItem, qUIZZESToolStripMenuItem, gAMEToolStripMenuItem, pROGRESSToolStripMenuItem, eXITToolStripMenuItem });
             menuStrip1.Location = new Point(281, 22);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(485, 36);
+            menuStrip1.Size = new Size(635, 36);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -107,6 +107,7 @@
             gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             gAMEToolStripMenuItem.Size = new Size(81, 32);
             gAMEToolStripMenuItem.Text = "GAME";
+            gAMEToolStripMenuItem.Visible = false;
             gAMEToolStripMenuItem.Click += gAMEToolStripMenuItem_Click;
             // 
             // pROGRESSToolStripMenuItem
@@ -264,6 +265,7 @@
             toolStripMenuItem3.Name = "toolStripMenuItem3";
             toolStripMenuItem3.Size = new Size(118, 32);
             toolStripMenuItem3.Text = "Play Game";
+            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
             // panelProgress
             // 
