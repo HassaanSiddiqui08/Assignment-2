@@ -104,6 +104,7 @@
             // 
             // gAMEToolStripMenuItem
             // 
+            gAMEToolStripMenuItem.BackColor = Color.Cyan;
             gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             gAMEToolStripMenuItem.Size = new Size(81, 32);
             gAMEToolStripMenuItem.Text = "GAME";

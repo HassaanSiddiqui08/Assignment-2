@@ -37,6 +37,12 @@ namespace Questacode1
 
         }
 
+        public static string GetPath(string fileName)
+        {
+            string path = Directory.GetCurrentDirectory() + "\\Lessons\\files\\";
+            return path + fileName;
+        }
+
         
     }
 }

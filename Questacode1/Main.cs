@@ -7,10 +7,16 @@ namespace Questacode1
         public Main()
         {
             InitializeComponent();
+            ShowWelcomeForm();
             ShowLoginForm();
             this.IsMdiContainer = true;
         }
 
+        private void ShowWelcomeForm()
+        { 
+            WelcomeScreenForm form = new WelcomeScreenForm();
+            form.ShowDialog();
+        }
         private void ShowLoginForm()
         {
             Login login = new Login();
@@ -161,8 +167,7 @@ namespace Questacode1
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Game game = new Game();
-            Utilities.SetupForm(game, panelLessons.Top, panelLessons.Left, panelLessons.Width);
+            
         }
     }
 
