@@ -146,6 +146,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
             ClientSize = new Size(1100, 630);
             Controls.Add(labelScore);
             Controls.Add(labelQuestionNumber);
