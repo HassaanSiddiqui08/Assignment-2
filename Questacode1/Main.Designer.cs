@@ -84,7 +84,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { lessonsToolStripMenuItem, qUIZZESToolStripMenuItem, gAMEToolStripMenuItem, pROGRESSToolStripMenuItem, eXITToolStripMenuItem });
             menuStrip1.Location = new Point(281, 22);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(635, 36);
+            menuStrip1.Size = new Size(404, 36);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -311,6 +311,7 @@
             Text = "Main";
             WindowState = FormWindowState.Maximized;
             FormClosing += Main_FormClosing;
+            Load += Main_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             menuStrip1.ResumeLayout(false);

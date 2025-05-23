@@ -13,7 +13,7 @@ namespace Questacode1
         }
 
         private void ShowWelcomeForm()
-        { 
+        {
             WelcomeScreenForm form = new WelcomeScreenForm();
             form.ShowDialog();
         }
@@ -167,7 +167,19 @@ namespace Questacode1
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is MdiClient mdiClient)
+                {
+                    mdiClient.BackColor = Color.LightSteelBlue; 
+                    break; 
+                }
+            }
         }
     }
 
